@@ -1,0 +1,14 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>co.elastic.leakchecker</groupId>
+    <artifactId>leakchecker-parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <modules>
+      <module>agent</module>
+      <module>dispatcher</module>
+    </modules>
+
+    <packaging>pom</packaging>
+
+</project>
