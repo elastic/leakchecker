@@ -32,7 +32,7 @@ java.lang.RuntimeException: Created: java.util.zip.Inflater@57d5872c
 # Running with Elasticsearch
 Copy the agent into the Elasticsearch install directory.
 ```
-ES_JAVA_OPTS="-javaagent:leakchecker-agent-1.0-SNAPSHOT-shaded.jar" bin/elasticsearch
+ES_JAVA_OPTS="-javaagent:leakchecker-agent-1.0-SNAPSHOT" && bin/elasticsearch
 ```
 It will report some allocations during startup and plugin loading, which will stay allocated due to various caches. 
 The important part is that it doesn't continue to increase over time.
